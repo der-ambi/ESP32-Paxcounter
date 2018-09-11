@@ -25,6 +25,7 @@ licenses. Refer to LICENSE.txt file in repository for more details.
 
 // Basic Config
 #include "main.h"
+#include "spi.h"
 
 configData_t cfg; // struct holds current device configuration
 char display_line6[16], display_line7[16]; // display buffers
@@ -46,10 +47,6 @@ TaskHandle_t WifiLoopTask = NULL;
 #ifdef HAS_LORA
 QueueHandle_t LoraSendQueue;
 TaskHandle_t LoraTask = NULL;
-#endif
-
-#ifdef HAS_SPI
-QueueHandle_t SPISendQueue;
 #endif
 
 portMUX_TYPE timerMux =
@@ -147,14 +144,8 @@ void setup() {
 // initialize SPI
 #ifdef HAS_SPI
   strcat_P(features, " SPI");
-  SPISendQueue = xQueueCreate(SEND_QUEUE_SIZE, sizeof(MessageBuffer_t));
-  if (SPISendQueue == 0) {
-    ESP_LOGE(TAG, "Could not create SPI send queue. Aborting.");
-    exit(0);
-  } else
-    ESP_LOGI(TAG, "SPI send queue created, size %d Bytes",
-             SEND_QUEUE_SIZE * PAYLOAD_BUFFER_SIZE);
 #endif
+  assert(spi_init() == ESP_OK);
 
     // initialize led
 #if (HAS_LED != NOT_A_PIN)

@@ -2,6 +2,12 @@
 
 #define HAS_LORA 1       // comment out if device shall not send data via LoRa
 #define HAS_SPI 1        // comment out if device shall not send data via SPI
+// pin definitions for SPI slave interface
+#define PIN_SPI_MOSI GPIO_NUM_22
+#define PIN_SPI_MISO GPIO_NUM_33
+#define PIN_SPI_SCLK GPIO_NUM_13
+#define PIN_SPI_CS GPIO_NUM_36
+
 #define CFG_sx1276_radio 1
 #define HAS_LED NOT_A_PIN // LoPy4 has no on board LED, so we use RGB LED on LoPy4
 #define HAS_RGB_LED   GPIO_NUM_0  // WS2812B RGB LED on GPIO0

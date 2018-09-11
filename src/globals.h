@@ -70,10 +70,6 @@ extern TaskHandle_t LoraTask;
 #include "lorawan.h"
 #endif
 
-#ifdef HAS_SPI
-extern QueueHandle_t SPISendQueue;
-#endif
-
 #ifdef HAS_DISPLAY
 #include "display.h"
 #endif
