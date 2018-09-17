@@ -17,10 +17,10 @@
 #define CFG_sx1276_radio 1 // RFM95 module
 
 // re-define pin definitions of pins_arduino.h
-#define PIN_SPI_SS     5 // ESP32  GPIO5 (Pin5)  -- SX1276 NSS  (Pin19) SPI Chip Select Input
-#define PIN_SPI_MOSI  23 // ESP32 GPIO23 (Pin23) -- SX1276 MOSI (Pin18) SPI Data Input
-#define PIN_SPI_MISO  19 // ESP32 GPIO19 (Pin19) -- SX1276 MISO (Pin17) SPI Data Output
-#define PIN_SPI_SCK   18 // ESP32 GPIO18 (Pin18  -- SX1276 SCK  (Pin16) SPI Clock Input
+#define PIN_LORA_SPI_SS     5 // ESP32  GPIO5 (Pin5)  -- SX1276 NSS  (Pin19) SPI Chip Select Input
+#define PIN_LORA_SPI_MOSI  23 // ESP32 GPIO23 (Pin23) -- SX1276 MOSI (Pin18) SPI Data Input
+#define PIN_LORA_SPI_MISO  19 // ESP32 GPIO19 (Pin19) -- SX1276 MISO (Pin17) SPI Data Output
+#define PIN_LORA_SPI_SCK   18 // ESP32 GPIO18 (Pin18  -- SX1276 SCK  (Pin16) SPI Clock Input
 
 // non arduino pin definitions
 #define RST   25 // ESP32 GPIO25 (Pin25) -- SX1276 NRESET (Pin7)  Reset Trigger Input
