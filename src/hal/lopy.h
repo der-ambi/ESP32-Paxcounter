@@ -7,10 +7,10 @@
 #define HAS_RGB_LED GPIO_NUM_0  // WS2812B RGB LED on GPIO0
 
 // Hardware pin definitions for Pycom LoPy board
-#define PIN_SPI_SS    GPIO_NUM_17
-#define PIN_SPI_MOSI  GPIO_NUM_27
-#define PIN_SPI_MISO  GPIO_NUM_19
-#define PIN_SPI_SCK   GPIO_NUM_5
+#define PIN_LORA_SPI_SS    GPIO_NUM_17
+#define PIN_LORA_SPI_MOSI  GPIO_NUM_27
+#define PIN_LORA_SPI_MISO  GPIO_NUM_19
+#define PIN_LORA_SPI_SCK   GPIO_NUM_5
 #define RST   GPIO_NUM_18
 #define DIO0  GPIO_NUM_23 // LoRa IRQ
 #define DIO1  GPIO_NUM_23 // Pin tied via diode to DIO0

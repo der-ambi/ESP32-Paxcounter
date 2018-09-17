@@ -12,10 +12,10 @@
 static const char TAG[] = "lora";
 
 // LMIC enhanced Pin mapping
-const lmic_pinmap lmic_pins = {.mosi = PIN_SPI_MOSI,
-                               .miso = PIN_SPI_MISO,
-                               .sck = PIN_SPI_SCK,
-                               .nss = PIN_SPI_SS,
+const lmic_pinmap lmic_pins = {.mosi = PIN_LORA_SPI_MOSI,
+                               .miso = PIN_LORA_SPI_MISO,
+                               .sck = PIN_LORA_SPI_SCK,
+                               .nss = PIN_LORA_SPI_SS,
                                .rxtx = LMIC_UNUSED_PIN,
                                .rst = RST,
                                .dio = {DIO0, DIO1, DIO2}};

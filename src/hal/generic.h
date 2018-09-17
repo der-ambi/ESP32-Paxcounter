@@ -23,10 +23,10 @@
 #define GPS_SERIAL 9600, SERIAL_8N1, GPIO_NUM_12, GPIO_NUM_15 // UBlox NEO 6M or 7M with default configuration
 
 // pin definitions for SPI interface of LoRa chip
-#define PIN_SPI_SS    GPIO_NUM_18 // SPI Chip Select
-#define PIN_SPI_MOSI  GPIO_NUM_27 // SPI Data Input
-#define PIN_SPI_MISO  GPIO_NUM_19 // SPI Data Output
-#define PIN_SPI_SCK   GPIO_NUM_5  // SPI Clock
+#define PIN_LORA_SPI_SS    GPIO_NUM_18 // SPI Chip Select
+#define PIN_LORA_SPI_MOSI  GPIO_NUM_27 // SPI Data Input
+#define PIN_LORA_SPI_MISO  GPIO_NUM_19 // SPI Data Output
+#define PIN_LORA_SPI_SCK   GPIO_NUM_5  // SPI Clock
 #define RST LMIC_UNUSED_PIN  // LoRa Reset (if wired)
 #define DIO0 GPIO_NUM_26     // LoRa IO0
 #define DIO1 GPIO_NUM_32     // LoRa IO1

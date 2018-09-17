@@ -8,10 +8,10 @@
 #define BOARD_HAS_PSRAM // use extra 4MB extern RAM
 
 // Hardware pin definitions for Pycom LoPy4 board
-#define PIN_SPI_SS    GPIO_NUM_18
-#define PIN_SPI_MOSI  GPIO_NUM_27
-#define PIN_SPI_MISO  GPIO_NUM_19
-#define PIN_SPI_SCK   GPIO_NUM_5
+#define PIN_LORA_SPI_SS    GPIO_NUM_18
+#define PIN_LORA_SPI_MOSI  GPIO_NUM_27
+#define PIN_LORA_SPI_MISO  GPIO_NUM_19
+#define PIN_LORA_SPI_SCK   GPIO_NUM_5
 #define RST   LMIC_UNUSED_PIN
 #define DIO0  GPIO_NUM_23 // LoRa IRQ
 #define DIO1  GPIO_NUM_23 // Pin tied via diode to DIO0

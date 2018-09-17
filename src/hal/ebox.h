@@ -9,10 +9,10 @@
 #define DISABLE_BROWNOUT 1 // comment out if you want to keep brownout feature
 
 // re-define pin definitions of pins_arduino.h
-#define PIN_SPI_SS    GPIO_NUM_18 // ESP32 GPIO18 (Pin18) -- SX1276 NSS (Pin19) SPI Chip Select Input
-#define PIN_SPI_MOSI  GPIO_NUM_27 // ESP32 GPIO27 (Pin27) -- SX1276 MOSI (Pin18) SPI Data Input
-#define PIN_SPI_MISO  GPIO_NUM_19 // ESP32 GPIO19 (Pin19) -- SX1276 MISO (Pin17) SPI Data Output
-#define PIN_SPI_SCK   GPIO_NUM_5  // ESP32 GPIO5 (Pin5)   -- SX1276 SCK (Pin16) SPI Clock Input
+#define PIN_LORA_SPI_SS    GPIO_NUM_18 // ESP32 GPIO18 (Pin18) -- SX1276 NSS (Pin19) SPI Chip Select Input
+#define PIN_LORA_SPI_MOSI  GPIO_NUM_27 // ESP32 GPIO27 (Pin27) -- SX1276 MOSI (Pin18) SPI Data Input
+#define PIN_LORA_SPI_MISO  GPIO_NUM_19 // ESP32 GPIO19 (Pin19) -- SX1276 MISO (Pin17) SPI Data Output
+#define PIN_LORA_SPI_SCK   GPIO_NUM_5  // ESP32 GPIO5 (Pin5)   -- SX1276 SCK (Pin16) SPI Clock Input
 
 // non arduino pin definitions
 #define RST   GPIO_NUM_14 // ESP32 GPIO14 (Pin14) -- SX1276 NRESET (Pin7) Reset Trigger Input
